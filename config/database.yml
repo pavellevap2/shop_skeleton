@@ -68,4 +68,6 @@ production:
   <<: *default
   database: sample_shop_production
   username: sample_shop
+  password: Sukasuka
+  host: localhost
   password: <%= ENV['SAMPLE_SHOP_DATABASE_PASSWORD'] %>

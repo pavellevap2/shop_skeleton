@@ -21,6 +21,18 @@ gem 'activeadmin'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
+gem 'faker'
+gem 'foreman'
+gem 'whenever'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
+gem 'paranoia'
+gem 'geocoder'
+gem 'nokogiri'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -31,6 +43,8 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors'
+  gem 'annotate'
 end
 
 group :test do
