@@ -15,9 +15,10 @@
 #  index_posts_on_blog_thread_id  (blog_thread_id)
 #
 
-class Post < ApplicationRecord
-  belongs_to :blog_thread
-  validates :title, :body, presence: true
-
-
+FactoryGirl.define do
+  factory :post do
+    title 'Kek'
+    body  'Mda'
+    blog_thread_id 1
+  end
 end

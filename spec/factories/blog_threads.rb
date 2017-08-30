@@ -9,8 +9,9 @@
 #  updated_at  :datetime         not null
 #
 
-class BlogThread < ApplicationRecord
-  has_many :posts
-  validates_presence_of :title
-
+FactoryGirl.define do
+  factory :blog_thread do
+    title 'kek'
+    posts_count 4
+  end
 end

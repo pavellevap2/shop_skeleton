@@ -9,8 +9,14 @@
 #  updated_at  :datetime         not null
 #
 
-class BlogThread < ApplicationRecord
-  has_many :posts
-  validates_presence_of :title
+require 'rails_helper'
 
+RSpec.describe BlogThread, type: :model do
+   describe 'checking valid or not' do
+      it { should validate_presence_of :title}
+
+   end
+  describe 'checking associations' do
+      it { should have_many(:posts)}
+  end
 end

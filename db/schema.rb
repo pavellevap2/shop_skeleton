@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170830130026) do
+ActiveRecord::Schema.define(version: 20170830162924) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +28,8 @@ ActiveRecord::Schema.define(version: 20170830130026) do
     t.integer "avatar_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "thread_id"
+    t.integer "blog_thread_id"
+    t.index ["blog_thread_id"], name: "index_posts_on_blog_thread_id"
   end
 
   create_table "users", force: :cascade do |t|
