@@ -32,7 +32,7 @@ gem 'omniauth-vkontakte'
 gem 'paranoia'
 gem 'geocoder'
 gem 'nokogiri'
-
+gem 'coveralls'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
